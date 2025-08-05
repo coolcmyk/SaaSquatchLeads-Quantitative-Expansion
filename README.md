@@ -4,6 +4,146 @@
 
 This project implements a **quantity-driven approach** enhanced with **real-time data integration and functional backend** to create a comprehensive B2B lead generation platform. The suite now includes 8 integrated tools with live data processing, WebSocket connections, and a complete API backend.
 
+## Quick Start Guide
+
+### Prerequisites
+- **Node.js** (version 18 or higher)
+- **npm** or **yarn** package manager
+- **Git** for cloning the repository
+
+### Installation & Setup
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/SaaSquatchLeads-Quantitative-Expansion.git
+   cd SaaSquatchLeads-Quantitative-Expansion
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the Development Server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Access the Application**
+   - Open your browser and navigate to: `http://localhost:3000`
+   - The main dashboard will be available immediately
+   - API endpoints are accessible at: `http://localhost:3000/api/`
+
+### Available Scripts
+
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build production version
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint for code quality checks
+
+### API Testing
+
+The repository includes an interactive API documentation notebook:
+
+1. **Open the API Documentation**
+   - Navigate to `API_Documentation.ipynb` in your code editor
+   - Or use Jupyter Notebook: `jupyter notebook API_Documentation.ipynb`
+
+2. **Test API Endpoints**
+   - Run the setup cell first to initialize the testing environment
+   - Execute individual endpoint tests as needed
+   - All endpoints are documented with example requests and responses
+
+### Authentication Setup
+
+The application includes a complete authentication system:
+
+1. **Register a New User**
+   - Navigate to the application in your browser
+   - Click "Register" and create an account
+   - Or use the API endpoint: `POST /api/auth/register`
+
+2. **Login**
+   - Use your credentials to login
+   - Or use the API endpoint: `POST /api/auth/login`
+
+3. **Admin Access**
+   - The first registered user gets admin privileges
+   - Admin users can access the user management dashboard
+   - Admin API endpoints are available at: `/api/admin/`
+
+### Project Structure
+
+```
+├── app/                    # Next.js App Router pages
+│   ├── api/               # API routes (backend)
+│   ├── tools/             # Individual tool pages
+│   └── layout.js          # Root layout
+├── components/            # React components
+├── lib/                   # Utility functions and services
+├── public/               # Static assets
+├── API_Documentation.ipynb # Interactive API testing
+└── README.md             # This file
+```
+
+### Environment Variables (Optional)
+
+Create a `.env.local` file for custom configuration:
+
+```env
+# Optional: Customize the base URL
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+
+# Optional: Enable debug mode
+DEBUG=true
+```
+
+### Troubleshooting
+
+**Port Already in Use**
+```bash
+# Kill process on port 3000
+lsof -ti:3000 | xargs kill -9
+# Or use a different port
+npm run dev -- -p 3001
+```
+
+**Module Not Found Errors**
+```bash
+# Clear npm cache and reinstall
+npm cache clean --force
+rm -rf node_modules package-lock.json
+npm install
+```
+
+**WebSocket Connection Issues**
+- Ensure no firewall is blocking WebSocket connections
+- Check browser console for connection errors
+- Verify the server is running on the correct port
+
+### Production Deployment
+
+For production deployment:
+
+1. **Build the Application**
+   ```bash
+   npm run build
+   ```
+
+2. **Start Production Server**
+   ```bash
+   npm run start
+   ```
+
+3. **Environment Setup**
+   - Configure production environment variables
+   - Set up proper domain and SSL certificates
+   - Configure database connections if needed
+
 ## Business Use Case Understanding (10/10)
 
 ### Core Value Proposition
