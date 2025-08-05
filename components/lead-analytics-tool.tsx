@@ -121,8 +121,8 @@ export default function LeadAnalyticsTool() {
               <div className="flex items-center gap-2">
                 <Users className="h-5 w-5 text-blue-400" />
                 <div>
-                  <p className="text-sm text-gray-400">Total Leads</p>
-                  <p className="text-2xl font-bold text-white">{analyticsData.totalLeads.toLocaleString()}</p>
+                  <p className="text-sm text-gray-800">Total Leads</p>
+                  <p className="text-2xl font-bold text-black">{analyticsData.totalLeads.toLocaleString()}</p>
                 </div>
               </div>
             </CardContent>
@@ -133,8 +133,8 @@ export default function LeadAnalyticsTool() {
               <div className="flex items-center gap-2">
                 <Target className="h-5 w-5 text-green-400" />
                 <div>
-                  <p className="text-sm text-gray-400">Qualified Leads</p>
-                  <p className="text-2xl font-bold text-white">{analyticsData.qualifiedLeads.toLocaleString()}</p>
+                  <p className="text-sm text-gray-800">Qualified Leads</p>
+                  <p className="text-2xl font-bold text-black">{analyticsData.qualifiedLeads.toLocaleString()}</p>
                 </div>
               </div>
             </CardContent>
@@ -145,8 +145,8 @@ export default function LeadAnalyticsTool() {
               <div className="flex items-center gap-2">
                 <TrendingUp className="h-5 w-5 text-purple-400" />
                 <div>
-                  <p className="text-sm text-gray-400">Conversion Rate</p>
-                  <p className="text-2xl font-bold text-white">{analyticsData.conversionRate}%</p>
+                  <p className="text-sm text-gray-800">Conversion Rate</p>
+                  <p className="text-2xl font-bold text-black">{analyticsData.conversionRate}%</p>
                 </div>
               </div>
             </CardContent>
@@ -157,8 +157,8 @@ export default function LeadAnalyticsTool() {
               <div className="flex items-center gap-2">
                 <BarChart3 className="h-5 w-5 text-orange-400" />
                 <div>
-                  <p className="text-sm text-gray-400">Avg Lead Score</p>
-                  <p className="text-2xl font-bold text-white">{analyticsData.avgScore}</p>
+                  <p className="text-sm text-gray-800">Avg Lead Score</p>
+                  <p className="text-2xl font-bold text-black">{analyticsData.avgScore}</p>
                 </div>
               </div>
             </CardContent>

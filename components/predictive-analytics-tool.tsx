@@ -395,10 +395,10 @@ export default function PredictiveAnalyticsTool() {
                 <CardContent className="p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <TrendingUp className="h-5 w-5 text-green-400" />
-                    <h4 className="font-semibold text-white">Conversion Trend</h4>
+                    <h4 className="font-semibold text-black">Conversion Trend</h4>
                   </div>
-                  <p className="text-2xl font-bold text-green-400 mb-1">+23%</p>
-                  <p className="text-sm text-gray-300">vs. last quarter</p>
+                  <p className="text-2xl font-bold text-black mb-1">+23%</p>
+                  <p className="text-sm text-gray-800">vs. last quarter</p>
                 </CardContent>
               </Card>
 
@@ -406,10 +406,10 @@ export default function PredictiveAnalyticsTool() {
                 <CardContent className="p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <DollarSign className="h-5 w-5 text-blue-400" />
-                    <h4 className="font-semibold text-white">Deal Size Growth</h4>
+                    <h4 className="font-semibold text-black">Deal Size Growth</h4>
                   </div>
-                  <p className="text-2xl font-bold text-blue-400 mb-1">+18%</p>
-                  <p className="text-sm text-gray-300">average increase</p>
+                  <p className="text-2xl font-bold text-black mb-1">+18%</p>
+                  <p className="text-sm text-gray-800">average increase</p>
                 </CardContent>
               </Card>
 
@@ -417,10 +417,10 @@ export default function PredictiveAnalyticsTool() {
                 <CardContent className="p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <Users className="h-5 w-5 text-purple-400" />
-                    <h4 className="font-semibold text-white">Lead Quality</h4>
+                    <h4 className="font-semibold text-black">Lead Quality</h4>
                   </div>
-                  <p className="text-2xl font-bold text-purple-400 mb-1">87.3%</p>
-                  <p className="text-sm text-gray-300">qualification rate</p>
+                  <p className="text-2xl font-bold text-black mb-1">87.3%</p>
+                  <p className="text-sm text-gray-800">qualification rate</p>
                 </CardContent>
               </Card>
             </div>

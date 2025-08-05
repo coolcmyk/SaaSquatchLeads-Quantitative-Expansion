@@ -50,15 +50,12 @@ export default function RealTimeDashboard() {
 
     // Fetch initial data
     fetchRealTimeMetrics()
-    fetchAlerts()
 
     // Set up periodic updates
     const metricsInterval = setInterval(fetchRealTimeMetrics, 5000) // Every 5 seconds
-    const alertsInterval = setInterval(fetchAlerts, 15000) // Every 15 seconds
 
     return () => {
       clearInterval(metricsInterval)
-      clearInterval(alertsInterval)
     }
   }, [])
 
@@ -92,32 +89,13 @@ export default function RealTimeDashboard() {
 
       if (data.success) {
         setMetrics(data.data.metrics)
+        setAlerts(data.data.alerts)
         setLastUpdate(new Date())
         setIsConnected(true)
       }
     } catch (error) {
       console.error("Failed to fetch real-time metrics:", error)
       setIsConnected(false)
-    }
-  }
-
-  const fetchAlerts = async () => {
-    try {
-      const response = await fetch("/api/analytics/realtime", {
-        credentials: 'include'
-      })
-      
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`)
-      }
-      
-      const data = await response.json()
-
-      if (data.success) {
-        setAlerts(data.data.alerts)
-      }
-    } catch (error) {
-      console.error("Failed to fetch alerts:", error)
     }
   }
 
@@ -191,9 +169,9 @@ export default function RealTimeDashboard() {
             <div className="flex items-center gap-2">
               <Users className="h-5 w-5 text-blue-400" />
               <div>
-                <p className="text-sm text-gray-400">Total Leads</p>
-                <p className="text-2xl font-bold text-white">{metrics.totalLeads.toLocaleString()}</p>
-                <p className="text-xs text-blue-300">+{metrics.leadsToday} today</p>
+                <p className="text-sm text-gray-800">Total Leads</p>
+                <p className="text-2xl font-bold text-black">{metrics.totalLeads.toLocaleString()}</p>
+                <p className="text-xs text-blue-800">+{metrics.leadsToday} today</p>
               </div>
             </div>
           </CardContent>
@@ -204,9 +182,9 @@ export default function RealTimeDashboard() {
             <div className="flex items-center gap-2">
               <TrendingUp className="h-5 w-5 text-green-400" />
               <div>
-                <p className="text-sm text-gray-400">Qualified Leads</p>
-                <p className="text-2xl font-bold text-white">{metrics.qualifiedLeads.toLocaleString()}</p>
-                <p className="text-xs text-green-300">{metrics.conversionRate.toFixed(1)}% rate</p>
+                <p className="text-sm text-gray-800">Qualified Leads</p>
+                <p className="text-2xl font-bold text-black">{metrics.qualifiedLeads.toLocaleString()}</p>
+                <p className="text-xs text-green-800">{metrics.conversionRate.toFixed(1)}% rate</p>
               </div>
             </div>
           </CardContent>
@@ -217,9 +195,9 @@ export default function RealTimeDashboard() {
             <div className="flex items-center gap-2">
               <Zap className="h-5 w-5 text-purple-400" />
               <div>
-                <p className="text-sm text-gray-400">Avg Score</p>
-                <p className="text-2xl font-bold text-white">{metrics.avgScore.toFixed(1)}</p>
-                <p className="text-xs text-purple-300">{metrics.scoresCalculated} calculated</p>
+                <p className="text-sm text-gray-800">Avg Score</p>
+                <p className="text-2xl font-bold text-black">{metrics.avgScore.toFixed(1)}</p>
+                <p className="text-xs text-purple-800">{metrics.scoresCalculated} calculated</p>
               </div>
             </div>
           </CardContent>
@@ -230,9 +208,9 @@ export default function RealTimeDashboard() {
             <div className="flex items-center gap-2">
               <Activity className="h-5 w-5 text-orange-400" />
               <div>
-                <p className="text-sm text-gray-400">Active Users</p>
-                <p className="text-2xl font-bold text-white">{metrics.activeUsers}</p>
-                <p className="text-xs text-orange-300">System load: {(metrics.systemLoad * 100).toFixed(0)}%</p>
+                <p className="text-sm text-gray-800">Active Users</p>
+                <p className="text-2xl font-bold text-black">{metrics.activeUsers}</p>
+                <p className="text-xs text-orange-800">System load: {(metrics.systemLoad * 100).toFixed(0)}%</p>
               </div>
             </div>
           </CardContent>
