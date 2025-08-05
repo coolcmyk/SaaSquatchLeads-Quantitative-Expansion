@@ -7,6 +7,7 @@ This project implements a **quantity-driven approach** enhanced with **real-time
 ## Quick Start Guide
 
 ### Prerequisites
+
 - **Node.js** (version 18 or higher)
 - **npm** or **yarn** package manager
 - **Git** for cloning the repository
@@ -14,12 +15,14 @@ This project implements a **quantity-driven approach** enhanced with **real-time
 ### Installation & Setup
 
 1. **Clone the Repository**
+
    ```bash
-   git clone https://github.com/your-username/SaaSquatchLeads-Quantitative-Expansion.git
+   git clone https://github.com/coolcmyk/SaaSquatchLeads-Quantitative-Expansion.git
    cd SaaSquatchLeads-Quantitative-Expansion
    ```
 
 2. **Install Dependencies**
+
    ```bash
    npm install
    # or
@@ -27,6 +30,7 @@ This project implements a **quantity-driven approach** enhanced with **real-time
    ```
 
 3. **Start the Development Server**
+
    ```bash
    npm run dev
    # or
@@ -105,6 +109,7 @@ DEBUG=true
 ### Troubleshooting
 
 **Port Already in Use**
+
 ```bash
 # Kill process on port 3000
 lsof -ti:3000 | xargs kill -9
@@ -113,6 +118,7 @@ npm run dev -- -p 3001
 ```
 
 **Module Not Found Errors**
+
 ```bash
 # Clear npm cache and reinstall
 npm cache clean --force
@@ -121,6 +127,7 @@ npm install
 ```
 
 **WebSocket Connection Issues**
+
 - Ensure no firewall is blocking WebSocket connections
 - Check browser console for connection errors
 - Verify the server is running on the correct port
@@ -130,11 +137,13 @@ npm install
 For production deployment:
 
 1. **Build the Application**
+
    ```bash
    npm run build
    ```
 
 2. **Start Production Server**
+
    ```bash
    npm run start
    ```
@@ -147,7 +156,9 @@ For production deployment:
 ## Business Use Case Understanding (10/10)
 
 ### Core Value Proposition
+
 The enhanced suite addresses critical pain points in B2B lead generation with real-time capabilities:
+
 - **Live Lead Discovery**: Real-time scraping with multi-source aggregation
 - **Dynamic Data Quality**: Continuous enrichment with live verification
 - **Intelligent Qualification**: ML-powered scoring with market data integration
@@ -156,6 +167,7 @@ The enhanced suite addresses critical pain points in B2B lead generation with re
 - **Seamless Integration**: API-first architecture for CRM workflows
 
 ### Target Market Alignment
+
 - **Primary Users**: Sales teams, business development professionals, growth marketers
 - **Use Cases**: Real-time prospecting, dynamic account-based marketing, live lead qualification
 - **ROI Focus**: Reduces manual research time by 90%, increases qualified lead conversion by 45%
@@ -163,6 +175,7 @@ The enhanced suite addresses critical pain points in B2B lead generation with re
 ## Technical Implementation (10/10)
 
 ### Enhanced Architecture
+
 - **Next.js 14** with App Router and API routes for full-stack functionality
 - **Real-time Data Services** with live API integrations
 - **WebSocket Support** for real-time updates and notifications
@@ -170,6 +183,7 @@ The enhanced suite addresses critical pain points in B2B lead generation with re
 - **ML Integration** with live market data for enhanced predictions
 
 ### Key Technical Features
+
 1. **Real-time Processing**: Live data streams with WebSocket connections
 2. **API Backend**: Complete REST API with database integration
 3. **Data Persistence**: In-memory database with real-time updates
@@ -177,6 +191,7 @@ The enhanced suite addresses critical pain points in B2B lead generation with re
 5. **Multi-source Integration**: Simulated connections to major data providers
 
 ### Data Processing Capabilities
+
 - **Live Lead Scraping**: Real-time aggregation from Apollo, ZoomInfo, LinkedIn, Crunchbase
 - **Dynamic Enrichment**: Live data from Clearbit, BuiltWith, SimilarWeb, Crunchbase
 - **Real-time Scoring**: ML models with live market data integration
@@ -185,6 +200,7 @@ The enhanced suite addresses critical pain points in B2B lead generation with re
 ## Real-time Data Integration (10/10)
 
 ### Data Sources Integration
+
 The platform now integrates with multiple live data sources:
 
 1. **Lead Generation APIs**
@@ -206,12 +222,14 @@ The platform now integrates with multiple live data sources:
    - Economic indicators integration
 
 ### WebSocket Implementation
+
 - **Real-time Connections**: Live data streaming to client applications
 - **Channel Subscriptions**: Targeted updates for specific data types
 - **Connection Management**: Automatic reconnection and error handling
 - **Performance Optimization**: Efficient message broadcasting and client management
 
 ### API Backend Architecture
+
 - **RESTful Endpoints**: Complete CRUD operations for all data types
 - **Real-time Updates**: Live data synchronization across all tools
 - **Error Handling**: Comprehensive error management and logging
@@ -221,6 +239,7 @@ The platform now integrates with multiple live data sources:
 ## Functional Backend Services (10/10)
 
 ### Authentication System
+
 - **Complete Auth Service**: User registration, login, logout with session management
 - **Role-based Access Control**: Admin and user roles with different permissions
 - **Session Management**: Secure HTTP-only cookies with proper expiration
@@ -228,12 +247,14 @@ The platform now integrates with multiple live data sources:
 - **Singleton Architecture**: Consistent auth state across all API endpoints
 
 ### Database Service
+
 - **In-memory Storage**: Fast data access with persistence simulation
 - **Real-time Updates**: Live data synchronization across all components
 - **Query Optimization**: Efficient filtering and pagination
 - **Data Relationships**: Proper linking between leads, scores, and enrichment data
 
 ### API Architecture
+
 - **8 API Endpoints**: Complete CRUD operations for all data types
 - **Authentication Middleware**: Secured endpoints with proper auth checks
 - **Error Handling**: Comprehensive error management and logging
@@ -241,12 +262,14 @@ The platform now integrates with multiple live data sources:
 - **Data Validation**: Input validation and sanitization
 
 ### Analytics Service
+
 - **Real-time Metrics**: Live performance monitoring and KPI tracking
 - **Alert System**: Automated notifications for important events
 - **Trend Analysis**: Historical data analysis with predictive insights
 - **Performance Monitoring**: System health and API response time tracking
 
 ### ML Integration Service
+
 - **Live Model Updates**: Real-time model predictions with market data
 - **Confidence Scoring**: Uncertainty quantification for all predictions
 - **Market Integration**: Live market data for enhanced scoring accuracy
@@ -255,12 +278,14 @@ The platform now integrates with multiple live data sources:
 ## UX/UI Excellence (10/10)
 
 ### Real-time Dashboard
+
 - **Live Metrics**: Real-time system performance and lead statistics
 - **Connection Status**: Visual indicators for data source connectivity
 - **Alert System**: Real-time notifications and system alerts
 - **Performance Monitoring**: Live system health and API response times
 
 ### Enhanced User Experience
+
 - **Authentication Flow**: Secure login/register with role-based access
 - **Real-time Updates**: Live data refresh without page reloads
 - **Connection Indicators**: Clear status of data source connections
@@ -271,6 +296,7 @@ The platform now integrates with multiple live data sources:
 ## Innovation & Differentiation (5/5)
 
 ### Real-time Capabilities
+
 1. **Live Data Streaming**: WebSocket-based real-time updates
 2. **Multi-source Integration**: Simultaneous data from multiple providers
 3. **Dynamic Scoring**: ML models that adapt to real-time market conditions
@@ -278,6 +304,7 @@ The platform now integrates with multiple live data sources:
 5. **Automated Alerts**: Intelligent notifications for important events
 
 ### Technical Innovations
+
 - **Hybrid Architecture**: Client-side tools with server-side intelligence
 - **Real-time ML**: Live model predictions with market data integration
 - **Adaptive UI**: Interface that responds to real-time data changes
@@ -286,6 +313,7 @@ The platform now integrates with multiple live data sources:
 ## Development Approach
 
 ### Real-time Features Added
+
 - **Complete Authentication System**: Login, register, logout with sessions
 - **8 API Endpoints**: Full backend functionality with auth protection
 - **Admin Dashboard**: User management interface for system administrators
@@ -297,12 +325,14 @@ The platform now integrates with multiple live data sources:
 ## Business Impact Potential
 
 ### Enhanced Value Proposition
+
 - **Real-time Insights**: Live market data for immediate decision making
 - **Automated Workflows**: Reduced manual intervention by 95%
 - **Predictive Intelligence**: Proactive lead identification and scoring
 - **System Reliability**: 99.9% uptime with automatic failover
 
 ### Scalability Metrics
+
 - **Real-time Processing**: 1,000+ concurrent connections
 - **API Performance**: Sub-200ms response times
 - **Data Throughput**: 10,000+ leads processed per hour
@@ -314,7 +344,7 @@ The enhanced SaaSquatch Expansion Suite now provides enterprise-grade functional
 
 The real-time architecture ensures users always have access to the most current data, while the functional backend provides the reliability and scalability needed for production deployment. This approach creates a comprehensive solution that addresses real business needs with cutting-edge technology.
 
-**Total Development Time**: 5 hours 
+**Total Development Time**: 5 hours
 **Tools Delivered**: 8 functional applications with real-time capabilities + Authentication System
 **Backend Services**: Complete API backend with database integration and authentication
 **Real-time Features**: WebSocket connections and live data streaming
