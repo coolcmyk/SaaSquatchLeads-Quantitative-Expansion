@@ -4,6 +4,40 @@
 
 This project implements a **quantity-driven approach** enhanced with **real-time data integration and functional backend** to create a comprehensive B2B lead generation platform. The suite now includes 8 integrated tools with live data processing, WebSocket connections, and a complete API backend.
 
+## Platform Screenshots
+
+### Real-time Dashboard
+![Real-time Dashboard](assets/dashboard.png)
+*Live system metrics, alerts, and performance monitoring with real-time data visualization*
+
+### Lead Scraping Tool
+![Lead Scraping Tool](assets/lead-scraping.png)
+*Multi-source lead extraction from Apollo, ZoomInfo, LinkedIn, and Crunchbase with real-time processing*
+
+### Company Enrichment
+![Company Enrichment](assets/company-enrichment.png)
+*Comprehensive company data enrichment with live API integrations and data verification*
+
+### AI Lead Scoring
+![AI Lead Scoring](assets/ai-lead-scoring.png)
+*Machine learning-powered lead qualification with confidence scoring and market data integration*
+
+### AI Email Generator
+![AI Email Generator](assets/ai-email.png)
+*Intelligent email generation with personalization and contextual business insights*
+
+### Lead Analytics
+![Lead Analytics](assets/lead-analytics.png)
+*Advanced analytics dashboard with trend analysis, performance metrics, and predictive insights*
+
+### Predictive ML
+![Predictive ML](assets/pred-ml.png)
+*Advanced machine learning predictions with market trend analysis and forecasting capabilities*
+
+### Bulk Export Tool
+![Bulk Export](assets/export.png)
+*Comprehensive data export functionality with multiple format support and filtering options*
+
 ## Quick Start Guide
 
 ### Prerequisites
@@ -90,6 +124,7 @@ The application includes a complete authentication system:
 ├── components/            # React components
 ├── lib/                   # Utility functions and services
 ├── public/               # Static assets
+├── assets/               # Platform screenshots and images
 ├── API_Documentation.ipynb # Interactive API testing
 └── README.md             # This file
 ```
@@ -337,6 +372,56 @@ The platform now integrates with multiple live data sources:
 - **API Performance**: Sub-200ms response times
 - **Data Throughput**: 10,000+ leads processed per hour
 - **Integration Ready**: API-first architecture for enterprise deployment
+
+## Platform Features Overview
+
+### 🎯 Real-time Dashboard
+![Dashboard Preview](assets/dashboard.png)
+- Live system metrics and KPI tracking
+- Real-time alerts and notifications
+- Performance monitoring and health checks
+
+### 🔍 Lead Scraping Tool
+![Lead Scraping Preview](assets/lead-scraping.png)
+- Multi-source data aggregation
+- Real-time lead discovery
+- Advanced filtering and search capabilities
+
+### 🏢 Company Enrichment
+![Company Enrichment Preview](assets/company-enrichment.png)
+- Comprehensive company data enhancement
+- Live API integrations
+- Data verification and quality scoring
+
+### 🤖 AI-Powered Lead Scoring
+![AI Lead Scoring Preview](assets/ai-lead-scoring.png)
+- Machine learning qualification models
+- Confidence scoring and explanations
+- Market data integration
+
+### ✉️ Intelligent Email Generation
+![AI Email Preview](assets/ai-email.png)
+- Personalized outreach automation
+- Context-aware messaging
+- A/B testing capabilities
+
+### 📊 Advanced Analytics
+![Analytics Preview](assets/lead-analytics.png)
+- Performance tracking and insights
+- Trend analysis and forecasting
+- Custom reporting dashboards
+
+### 🧠 Predictive Machine Learning
+![Predictive ML Preview](assets/pred-ml.png)
+- Advanced forecasting models
+- Market trend prediction
+- Risk assessment algorithms
+
+### 📤 Bulk Export Functionality
+![Export Tool Preview](assets/export.png)
+- Multiple format support (CSV, Excel, JSON)
+- Custom field selection
+- Batch processing capabilities
 
 ## Conclusion
 
